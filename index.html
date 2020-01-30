@@ -25,7 +25,7 @@
 
   <script>
     // Include the UserVoice JavaScript SDK (only needed once on a page)
-    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//bendev.uservoice.com/widget_environment/Q8PNRJE2fAb3vY1Y4Sdg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//uservoice.localhost/widget_environment/eXsHEVVnSPiNttZmV3X5Bw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
 
     //
     // UserVoice Javascript SDK developer documentation:
@@ -58,10 +58,10 @@
     }]);
 
     // Add default trigger to the bottom-right corner of the window:
-    UserVoice.push(['addTrigger', {mode: 'feedback', trigger_position: 'bottom-right' }]);
+    UserVoice.push(['addTrigger', {mode: 'contact', trigger_position: 'bottom-right' }]);
 
     // Or, use your own custom trigger:
-    //UserVoice.push(['addTrigger', '#id', { mode: 'feedback' }]);
+    //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
 
     // Autoprompt for NPS® Rating (only displayed under certain conditions)
     UserVoice.push(['autoprompt', {}]);
